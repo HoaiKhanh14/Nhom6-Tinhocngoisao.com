@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Màu nền trang (tùy chọn) */
+}
+
+.hotline-container {
+    background-color: #e0e0e0; /* Màu nền của container hotline */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Điều chỉnh độ rộng tùy ý */
+    margin: 20px auto; /* Căn giữa container (tùy chọn) */
+    overflow: hidden; /* Ẩn các phần tử có thể tràn ra ngoài border-radius */
+}
+
+.hotline-header {
+    background-color: #dc3545; /* Màu đỏ của header hotline */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.hotline-text {
+    font-weight: bold;
+}
+
+.hotline-numbers {
+    background-color: white;
+    padding: 10px;
+}
+
+.number-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-item:last-child {
+    border-bottom: none;
+}
+
+.number-item span:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.number-item span:last-child {
+    color: #777;
+    font-size: 0.9em;
+}

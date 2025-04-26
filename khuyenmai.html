@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khuyen mai</title>
+    <style>
+         .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: white; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+        .footer {
+            background-color: whitesmoke; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+
+        .top-footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid red;
+            margin-bottom: 20px;
+        }
+
+        .top-footer-item {
+            text-align: center;
+        }
+
+        .top-footer-item img {
+            width: 30px; /* Kích thước icon */
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .mid-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .mid-footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .mid-footer-column h3 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .mid-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mid-footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .mid-footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+  }
+
+  .mid-footer-column.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    text-indent: -9999px; 
+    border-radius: 5px;
+  }
+
+  .bottom-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+
+  .bottom-footer img {
+    max-width: 150px; /* Kích thước logo chứng nhận */
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+        .app-icon-container {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+      
+        .app-icon-link {
+            width: 50px; /* Kích thước biểu tượng */
+            height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          color: white; /* Màu icon */
+          font-size: 24px; /* Kích thước icon */
+          text-decoration: none;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      
+        .facebook {
+          background-color: #1877F2;
+          font-size: 12px; /* Điều chỉnh cho chữ Facebook */
+          font-weight: bold;
+        }
+      
+        .youtube {
+          background-color: #FF0000;
+            font-size: 16px; /* Điều chỉnh cho chữ Youtube */
+            font-weight: bold;
+        }
+      
+        .tiktok {
+          background-color: #000000;
+            font-size: 16px; /* Điều chỉnh cho chữ TikTok */
+            font-weight: bold;
+        }
+      
+        .zalo {
+          background-color: #0084FF;
+          font-size: 16px; /* Điều chỉnh cho chữ Zalo */
+          font-weight: bold;
+        }
+      
+        .google-plus {
+          background-color: #DB4437;
+            font-size: 16px; /* Điều chỉnh cho chữ Google+ */
+            font-weight: bold;
+        }
+      </style>
+    <style>
+        .banner-khuyen-mai {
+            background-color: #f44336; /* Màu đỏ tươi như hình */
+            color: white; /* Chữ màu trắng */
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Để có thể định vị tuyệt đối các phần tử bên trong nếu cần */
+            overflow: hidden; /* Ẩn các phần tử có thể tràn ra ngoài */
+            animation:fadeIn 0.5s ease-in forwards;
+        }
+    
+        .tieu-de-khuyen-mai {
+            font-size: 2em; /* Kích thước chữ lớn cho tiêu đề */
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng bóng đổ cho chữ */
+        }
+    
+        .khau-hieu-khuyen-mai {
+            font-size: 1.5em; /* Kích thước chữ vừa phải cho khẩu hiệu */
+            font-style: italic; /* Chữ nghiêng */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng bóng đổ nhẹ */
+        }
+    
+        /* Bạn có thể thêm CSS để tạo hiệu ứng confetti hoặc các chi tiết trang trí khác */
+        /* Ví dụ đơn giản về confetti (chỉ mang tính chất minh họa): */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall 3s linear infinite;
+        }
+    
+        .confetti:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .confetti:nth-child(2) { top: 30%; left: 80%; animation-delay: 0.5s; }
+        .confetti:nth-child(3) { top: 60%; left: 30%; animation-delay: 1s; }
+        /* Thêm nhiều confetti hơn với vị trí và độ trễ khác nhau */
+    
+        @keyframes fall {
+            0% { transform: translateY(-50px) rotate(0deg); }
+            100% { transform: translateY(300px) rotate(360deg); opacity: 0; }
+            from {  transform: translateX(-100%);opacity: 1; }
+            to { transform: translateX(0);opacity: 0.7; }
+
+        }
+    </style>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: #dc3545; /* Màu đỏ tương tự header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-box button {
+            background-color: #dc3545; /* Màu đỏ nút tìm kiếm */
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .khuyen-mai-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tạo lưới linh hoạt */
+            gap: 15px; /* Khoảng cách giữa các mục khuyến mãi */
+            padding: 20px;
+            background-color: #f8f8f8; /* Màu nền tổng thể */
+        }
+
+        .khuyen-mai-item {
+            background-color: cornsilk; /* Màu nền mỗi mục khuyến mãi */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ẩn các phần tử tràn ra ngoài border-radius */
+        }
+
+        .khuyen-mai-item img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .khuyen-mai-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .khuyen-mai-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #e44d26; /* Màu chữ tiêu đề nổi bật */
+        }
+
+        .khuyen-mai-description {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .khuyen-mai-price {
+            font-size: 1em;
+            color: #333;
+        }
+
+        .khuyen-mai-old-price {
+            color: #777;
+            text-decoration: line-through;
+            margin-right: 5px;
+        }
+
+        .khuyen-mai-link {
+            display: block;
+            background-color: #007bff; /* Màu nền nút liên kết */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .khuyen-mai-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Khuyến mãi</a>
+        <a href="#">Trả góp</a>
+        <a href="#">Bảng giá</a>
+        <a href="#">Xây dựng cấu hình</a>
+        <a href="./chinhsachbaohanh.html">Chính sách bảo hành</a>
+        <a href="#">Hotline</a>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div style="margin-right: 20px;">
+            <img src="hình/download.png" alt="STAR" style="height: 30px;">
+        </div>
+        <button style="padding: 10px 15px; border: 1px solid #ccc; background-color: white; cursor: pointer; margin-right: 10px;">
+            <a" alt="Menu" style="height: 15px; vertical-align: middle; margin-right: 5px;"></a>
+            Danh mục sản phẩm
+        </button>
+        <input type="text" placeholder="Bạn tìm gì..." style="width: 200px;height: 10px; padding: 8px; border: 1px solid #ccc; margin-right: 10px;">
+        <button style="background-color: #dc3545; color: white; border: none; padding: 8px; cursor: pointer;">
+        Tìm kiếm
+    </button>
+    <div style="display: flex; align-items: center;">
+    <img src="hình/images (1).jpg"alt=" Đăng ký/đăng nhập "style="height: 50px; margin-right: 5px;">
+    Tài khoản 
+      
+    </div>
+        <a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <img src="hình/download (2).png" alt="Giỏ hàng" style="width: 50px;height: 50px; margin-right: 5px;">
+            <span style="background-color: #dc3545; color: white; border-radius: 50%; padding: 2px 5px; font-size: 12px; margin-left: 5px;">0</span>
+        </a>
+    </div>
+    <div class="banner-khuyen-mai">
+        <p class="tieu-de-khuyen-mai">KHUYẾN MÃI STAR</p>
+        <p class="khau-hieu-khuyen-mai">MUA SẮM THẢ GA</p>
+        <p class="khau-hieu-khuyen-mai">GIÁ CẢ HỢP LÝ</p>
+        <p class="khau-hieu-khuyen-mai">THANH TOÁN DỄ DÀNG</p>
+        </div>
+    <div class="khuyen-mai-container">
+        <div class="khuyen-mai-item">
+            <img src="hình/km1.jpg" alt="Khuyến mãi 1">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Xem ngay</a>
+            </div>
+        </div>
+
+        <div class="khuyen-mai-item">
+            <img src="hình/km2.jpg" alt="Khuyến mãi 2">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Tìm hiểu thêm</a>
+            </div>
+        </div>
+
+        </div>
+    <div class="khuyen-mai-container">
+        <div class="khuyen-mai-item">
+            <img src="hình/km3.jpg" alt="Khuyến mãi 3">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Xem ngay</a>
+            </div>
+        </div>
+
+        <div class="khuyen-mai-item">
+            <img src="hình/km4.jpg" alt="Khuyến mãi 4">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Tìm hiểu thêm</a>
+            </div>
+        </div>
+
+        </div>
+    <div class="khuyen-mai-container">
+        <div class="khuyen-mai-item">
+            <img src="hình/km5.jpg" alt="Khuyến mãi 5">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Xem ngay</a>
+            </div>
+        </div>
+
+        <div class="khuyen-mai-item">
+            <img src="hình/km6.jpg" alt="Khuyến mãi 6">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Tìm hiểu thêm</a>
+            </div>
+        </div>
+
+        </div>
+    <div class="khuyen-mai-container">
+        <div class="khuyen-mai-item">
+            <img src="hình/km7.jpg" alt="Khuyến mãi 7">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Xem ngay</a>
+            </div>
+        </div>
+
+        <div class="khuyen-mai-item">
+            <img src="hình/km8.jpg" alt="Khuyến mãi 8">
+            <div class="khuyen-mai-info">
+                <a href="#" class="khuyen-mai-link">Tìm hiểu thêm</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div class="top-footer">
+                <div class="top-footer-item">
+                  <strong>CHÍNH SÁCH GIAO HÀNG</strong>
+                  <p>Nhận hàng & thanh toán tại nhà</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>ĐỔI TRẢ DỄ DÀNG</strong>
+                  <p>1 đổi 1 trong 7 ngày</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>GIÁ LUÔN TỐT NHẤT</strong>
+                  <p>Giá cả hợp lý, nhiều ưu đãi</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>HỖ TRỢ NHIỆT TÌNH</strong>
+                  <p>Tư vấn, giải đáp mọi thắc mắc</p>
+                </div>
+              </div>
+          
+              <div class="mid-footer">
+                <div class="mid-footer-column">
+                  <h3>GIỚI THIỆU THNS</h3>
+                  <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Tư vấn mua hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                  <div class="app-icon-container">
+                          <img src="hình/download (1).png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 5px;">
+                          <i class="fab fa-facebook-f"></i>
+                        <img src="hình/images.png" alt="Youtube" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-youtube"></i>
+                        <img src="hình/download.jpg" alt="TikTok" style="width: 80px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-tiktok"></i>
+                        <img src="hình/Logo-zalo-png.png" alt="Zalo" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-zalo"></i>
+                          <img src="hình/images (2).jpg" alt="Google" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>CHÍNH SÁCH CHUNG</h3>
+                  <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+                    <li><a href="#">Chính sách trả góp</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi - trả hàng</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>THÔNG TIN KHUYẾN MÃI</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp khuyến mãi</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp Hotline CSKH, phản ánh</a></li>
+                    <li><a href="#">Lắp đặt phòng net</a></li>
+                    <li><a href="#">Thiết bị mining</a></li>
+                    <li><a href="#">Tra cứu bảo hành</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="bottom-footer">
+                <p>CÔNG TY TNHH Tin Học Ngôi Sao Lớn | MST: 0312152569 - 05/02/2013 - Số kế hoạch và đầu tư TP.HCM | Trụ sở chính: 28 - 30 Trần Triệu Luật, P6, Quận Tân Bình, TP.HCM | Hotline: 1900.0243 | Email: hanntt@tinhocngoisao.vn</p>
+                <p>© 2023 Tinhocngoisao.vn. All rights reserved.</p>
+              </div>
+         </div>   
+</body>
+</html>

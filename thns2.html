@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR THUOCNGOISAO.COM</title>
+    <style>
+      .body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .header {
+          background-color: white; /* Màu nền xám nhạt */
+          padding: 20px 0;
+          color: black;
+          font-size: 14px;
+      }
+      .footer {
+          background-color: whitesmoke; /* Màu nền xám nhạt */
+          padding: 20px 0;
+          color: black;
+          font-size: 14px;
+      }
+
+      .top-footer {
+          display: flex;
+          justify-content: space-around;
+          padding: 20px;
+          border-bottom: 1px solid red;
+          margin-bottom: 20px;
+      }
+
+      .top-footer-item {
+          text-align: center;
+      }
+
+      .top-footer-item img {
+          width: 30px; /* Kích thước icon */
+          height: 30px;
+          vertical-align: middle;
+          margin-right: 5px;
+      }
+      .mid-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.mid-footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.mid-footer-column h3 {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.mid-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mid-footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.mid-footer-column ul li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.mid-footer-column.social-links a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  text-indent: -9999px; 
+  border-radius: 5px;
+}
+
+.bottom-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+.bottom-footer img {
+  max-width: 150px; /* Kích thước logo chứng nhận */
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+  </style>
+  <style>
+      .app-icon-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    
+      .app-icon-link {
+          width: 50px; /* Kích thước biểu tượng */
+          height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        color: white; /* Màu icon */
+        font-size: 24px; /* Kích thước icon */
+        text-decoration: none;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+    
+      .facebook {
+        background-color: #1877F2;
+        font-size: 12px; /* Điều chỉnh cho chữ Facebook */
+        font-weight: bold;
+      }
+    
+      .youtube {
+        background-color: #FF0000;
+          font-size: 16px; /* Điều chỉnh cho chữ Youtube */
+          font-weight: bold;
+      }
+    
+      .tiktok {
+        background-color: #000000;
+          font-size: 16px; /* Điều chỉnh cho chữ TikTok */
+          font-weight: bold;
+      }
+    
+      .zalo {
+        background-color: #0084FF;
+        font-size: 16px; /* Điều chỉnh cho chữ Zalo */
+        font-weight: bold;
+      }
+    
+      .google-plus {
+        background-color: #DB4437;
+          font-size: 16px; /* Điều chỉnh cho chữ Google+ */
+          font-weight: bold;
+      }
+    </style>
+    <style>
+          .sidebar {
+          width: 150px;
+          background-color: white;
+          padding: 10px;
+          float: left;
+        }
+      
+        .sidebar-item {
+          padding: 8px 10px;
+          cursor: pointer;
+        }
+      
+        .sidebar-item:hover {
+          background-color:white;
+        }
+      
+        .menu-container {
+          position: absolute;
+          left: 150px; /* Adjust based on sidebar width */
+          top: 0;
+          background-color: white;
+          border: 1px solid white;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+          display: none; /* Hidden by default */
+          padding: 15px;
+          z-index: 10; /* Ensure it's above other elements */
+        }
+      
+        .menu-column {
+          float: left;
+          margin-right: 20px;
+        }
+      
+        .menu-column h3 {
+          font-size: 16px;
+          margin-top: 0;
+          margin-bottom: 5px;
+          color: red;
+        }
+      
+        .menu-column ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+      
+        .menu-column li {
+          padding: 5px 0;
+          font-size: 14px;
+          color: black;
+          cursor: pointer;
+        }
+      
+        .menu-column li:hover {
+          width: 100px;
+          height: 50px;
+          color: red;
+          transition: 1s;
+        }
+      
+        /* Clear floats */
+        .menu-container::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    </style>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+        }
+        .search-bar button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav ul {
+          justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            padding-right: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid red;
+        }
+        .sidebar ul li a:hover {
+            background-color: white;
+        }
+        .main-area {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .promotion-banner {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Placeholder for icons */
+        .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: white; /* Replace with actual icons or styling */
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Kiểu cho cách 2 */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px); /* Chia thành 2 cột trên màn hình lớn */
+}
+
+.footer-content h3 {
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-content p,
+.footer-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-content ul li a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+/* Điều chỉnh cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .footer-content > div {
+        flex-basis: 100%; /* Hiển thị trên một cột trên màn hình nhỏ */
+        text-align: center;
+    }
+
+    .social-links ul {
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+      <script>
+        function showMenu(menuId) {
+          document.getElementById(menuId).style.display = 'block';
+        }
+      
+        function hideMenu(menuId) {
+          document.getElementById(menuId).style.display = 'none';
+        }
+      </script>
+    <div class="container">
+        <header>
+            <div style="display: flex; align-items: center;">
+                <div style="margin-right: 20px;">
+                    <img src="./logo.webp" alt="STAR" style="height: 100px;">
+                </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Bạn tìm gì...">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+            <div>
+              <img src="./guest.png" alt="icon" style="height: 20px;">
+                <a href="./dangnhapdangky/dangnhap.htm">Đăng nhập/Đăng ký</a>
+                <img src="./cart_57531e43108d48c6ab3281bbbc813beb.webp" alt="icon" style="height: 20px;">
+                <a href="./giohang/giohang.html">Giỏ hàng</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+              <img src="./icon_nav_1_icon.webp" alt="icon" style="height: 20px;">
+              <li><a href="./khuyenmai.html"> <span>Khuyến mãi</span></a></li>
+              <img src="./icon_nav_2_icon.png" alt="icon" style="height: 20px;">
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <img src="./icon_nav_3_icon.png" alt="icon" style="height: 20px;">
+                <li><a href="#">Bảng giá</a></li>
+                <img src="./icon_nav_4_icon.png" alt="icon" style="height: 20px;">
+                <li><a href="#">Xây dựng cấu hình</a></li>
+                <img src="./icon_nav_5_icon.png" alt="icon" style="height: 20px;">
+                <li><a href="./chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+                <img src="./icon_nav_6_icon.webp" alt="icon" style="height: 20px;">
+                <li><a href="#">Hotline</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#"><span class="icon"></span>Lắp đặt phòng net</a></li>
+                    <li><a href="./linkkiencu/linkkiencu.html"><span class="icon"></span>Linh Kiện PC ></a></li>
+                    <li><a href="./cpu,vga,mainbroad/mainboard.html"><span class="icon"></span>CPU, Mainboard, VGA ></a></li>
+                    <li><a href="./ram,ssd,hdd,thenho/ram,ssd,hdd,thenho.html"><span class="icon"></span>RAM, SSD, HDD, Thẻ nhớ ></a></li>
+                    <li><a href="./case,tannhiet,nguon/case,tan nhiet,nguon.html"><span class="icon"></span>Case, Tản, Nguồn ></a></li>
+                    <li><a href="./pcgaming/PCgaming,dohoa,AI.html"><span class="icon"></span>PC Gaming - Đồ Họa - AI ></a></li>
+                    <li><a href="./pcvanphong/pcvanphong,doanhnghiep.html"><span class="icon"></span>PC Văn Phòng - Doanh nghiệp ></a></li>
+                    <li><a href="./laptop/latop.html"><span class="icon"></span>Laptop ></a></li>
+            </aside>
+            </section>
+            <main class="main-area">
+                <span><img src="./fhome_slider_item_desk_img8.webp" alt="Promotion Banner" style="max-width: 100%;height: 100%;" class="promotion-banner"></span>
+                </main>
+        </div>
+    </div>
+    <!-- Footer Section -->
+      <div class="top-footer">
+        <div class="top-footer-item">
+          <strong>CHÍNH SÁCH GIAO HÀNG</strong>
+          <p>Nhận hàng & thanh toán tại nhà</p>
+        </div>
+        <div class="top-footer-item">
+          <strong>ĐỔI TRẢ DỄ DÀNG</strong>
+          <p>1 đổi 1 trong 7 ngày</p>
+        </div>
+        <div class="top-footer-item">
+          <strong>GIÁ LUÔN TỐT NHẤT</strong>
+          <p>Giá cả hợp lý, nhiều ưu đãi</p>
+        </div>
+        <div class="top-footer-item">
+          <strong>HỖ TRỢ NHIỆT TÌNH</strong>
+          <p>Tư vấn, giải đáp mọi thắc mắc</p>
+        </div>
+      </div>
+  
+      <div class="mid-footer">
+        <div class="mid-footer-column">
+          <h3>GIỚI THIỆU THNS</h3>
+          <ul>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+          <div class="app-icon-container">
+              <a href="#" class="app-icon-link facebook" target="_blank">
+                  <span>Facebook</span>
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="app-icon-link youtube" target="_blank">
+                  <span>You
+                      tube</span>
+                  <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="app-icon-link tiktok" target="_blank">
+                  <span>TikTok</span>
+                  <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="app-icon-link zalo" target="_blank">
+                  <span>Zalo</span>
+                  <i class="fab fa-zalo"></i>
+              </a>
+              <a href="#" class="app-icon-link google-plus" target="_blank">
+                  <span>G+</span>
+                  <i class="fab fa-google-plus-g"></i>
+              </a>
+            </div>
+        </div>
+        <div class="mid-footer-column">
+          <h3>CHÍNH SÁCH CHUNG</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+            <li><a href="#">Chính sách trả góp</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+            <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi - trả hàng</a></li>
+          </ul>
+        </div>
+        <div class="mid-footer-column">
+          <h3>THÔNG TIN KHUYẾN MÃI</h3>
+          <ul>
+            <li><a href="#">Tổng hợp khuyến mãi</a></li>
+          </ul>
+        </div>
+        <div class="mid-footer-column">
+          <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul>
+            <li><a href="#">Tổng hợp Hotline CSKH, phản ánh</a></li>
+            <li><a href="#">Lắp đặt phòng net</a></li>
+            <li><a href="#">Thiết bị mining</a></li>
+            <li><a href="#">Tra cứu bảo hành</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="bottom-footer">
+        <p>CÔNG TY TNHH Tin Học Ngôi Sao Lớn | MST: 0312152569 - 05/02/2013 - Số kế hoạch và đầu tư TP.HCM | Trụ sở chính: 28 - 30 Trần Triệu Luật, P6, Quận Tân Bình, TP.HCM | Hotline: 1900.0243 | Email: hanntt@tinhocngoisao.vn</p>
+        <p>© 2023 Tinhocngoisao.vn. All rights reserved.</p>
+      </div>
+</body>
+</html>

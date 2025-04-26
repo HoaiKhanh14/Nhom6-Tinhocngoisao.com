@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - CÔNG TY TIN HỌC NGÔI SAO LỚN</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: white; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+        .footer {
+            background-color: whitesmoke; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+
+        .top-footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid red;
+            margin-bottom: 20px;
+        }
+
+        .top-footer-item {
+            text-align: center;
+        }
+
+        .top-footer-item img {
+            width: 30px; /* Kích thước icon */
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .mid-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .mid-footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .mid-footer-column h3 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .mid-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mid-footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .mid-footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+  }
+
+  .mid-footer-column.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    text-indent: -9999px; 
+    border-radius: 5px;
+  }
+
+  .bottom-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+  .bottom-footer img {
+    max-width: 150px; /* Kích thước logo chứng nhận */
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+    </style>
+    <style>
+        .app-icon-container {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+      
+        .app-icon-link {
+            width: 50px; /* Kích thước biểu tượng */
+            height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          color: white; /* Màu icon */
+          font-size: 24px; /* Kích thước icon */
+          text-decoration: none;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      
+        .facebook {
+          background-color: #1877F2;
+          font-size: 12px; /* Điều chỉnh cho chữ Facebook */
+          font-weight: bold;
+        }
+      
+        .youtube {
+          background-color: #FF0000;
+            font-size: 16px; /* Điều chỉnh cho chữ Youtube */
+            font-weight: bold;
+        }
+      
+        .tiktok {
+          background-color: #000000;
+            font-size: 16px; /* Điều chỉnh cho chữ TikTok */
+            font-weight: bold;
+        }
+      
+        .zalo {
+          background-color: #0084FF;
+          font-size: 16px; /* Điều chỉnh cho chữ Zalo */
+          font-weight: bold;
+        }
+      
+        .google-plus {
+          background-color: #DB4437;
+            font-size: 16px; /* Điều chỉnh cho chữ Google+ */
+            font-weight: bold;
+        }
+      </style>
+    <style>
+         .body-img {
+            size: 100%;
+            width: 10%;
+            height: 10%;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+        }
+            .inner {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    </style>
+    <style>
+        .danh-muc {
+            font-size: 8px; 
+            width: 130px; /* Chiều rộng của khung danh mục */
+            height: 50px; /* Chiều cao tự động */
+            border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt */
+            padding: 10; /* Tạo khoảng cách bên trong khung */
+            margin-bottom: 10px; /* Tạo khoảng cách bên dưới khung */
+        }
+
+        .danh-muc ul {
+            list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+            padding: 0;
+            margin: 0;
+        }
+
+        .danh-muc li {
+            padding: 5px 0; /* Tạo khoảng cách trên và dưới mỗi mục */
+            border-bottom: 1px dotted #eee; /* Tạo đường chấm mờ phân cách các mục */
+        }
+
+        .danh-muc li:last-child {
+            border-bottom: none; /* Loại bỏ đường kẻ dưới ở mục cuối cùng */
+        }
+    </style>
+    <style>
+        /* CSS cơ bản - bạn cần viết CSS chi tiết hơn để giống giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: #dc3545; /* Màu đỏ tương tự header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-box button {
+            background-color: #dc3545; /* Màu đỏ nút tìm kiếm */
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        .user-actions a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .user-actions span {
+            margin-left: 5px;
+        }
+        .menu-icon {
+            font-size: 20px;
+            text-decoration: black;
+            color: white;
+            margin-right: 15px;
+        }
+        .main-nav {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .main-nav li {
+            margin-right: 20px;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .breadcrumb {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .breadcrumb a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            margin: 0 5px;
+        }
+           
+        .about-section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .about-section h3 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.6;
+            color: #555;
+        }
+        table {
+            width: 100%; /* Để bảng chiếm toàn bộ chiều rộng của phần tử cha */
+            border-collapse: collapse; /* Gộp đường viền của các ô */
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd; /* Thêm đường viền mỏng màu xám nhạt cho các ô */
+            padding: 8px;
+            text-align: center; /* Căn chữ vào giữa ô */
+        }
+        th {
+            background-color: #f2f2f2; /* Màu nền nhạt cho tiêu đề */
+            font-weight: bold; /* In đậm tiêu đề */
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            text-align: left; /* Căn tiêu đề bảng sang trái */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Khuyến mãi</a>
+        <a href="#">Trả góp</a>
+        <a href="#">Bảng giá</a>
+        <a href="#">Xây dựng cấu hình</a>
+        <a href="#">Chính sách bảo hành</a>
+        <a href="#">Hotline</a>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div style="margin-right: 20px;">
+            <img src="hình/download.png" alt="STAR" style="height: 30px;">
+        </div>
+        <button style="padding: 10px 15px; border: 1px solid #ccc; background-color: white; cursor: pointer; margin-right: 10px;">
+            <a" alt="Menu" style="height: 15px; vertical-align: middle; margin-right: 5px;"></a>
+            Danh mục sản phẩm
+        </button>
+        <input type="text" placeholder="Bạn tìm gì..." style="width: 200px;height: 10px; padding: 8px; border: 1px solid #ccc; margin-right: 10px;">
+        <button style="background-color: #dc3545; color: white; border: none; padding: 8px; cursor: pointer;">
+        Tìm kiếm
+    </button>
+    <div style="display: flex; align-items: center;">
+    <img src="hình/images (1).jpg"alt=" Đăng ký/đăng nhập "style="height: 50px; margin-right: 5px;">
+    Tài khoản 
+      
+    </div>
+        <a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <img src="hình/download (2).png" alt="Giỏ hàng" style="width: 50px;height: 50px; margin-right: 5px;">
+            <span style="background-color: #dc3545; color: white; border-radius: 50%; padding: 2px 5px; font-size: 12px; margin-left: 5px;">0</span>
+        </a>
+    </div>
+    <div class="main-nav">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></l>
+            <li><a href="#">Laptop gaming</a></li>
+            <li><a href="#">Bàn phím Akko</a></li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">CPU AMD</a></li>
+            <li><a href="#">Bàn phím</a></li>
+            <li><a href="#">Màn hình</a></li>
+            </ul>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="#">Trang chủ</a> <span>></span> <span>Giới thiệu</span>
+    </div>
+
+    <div class="about-section">
+        <ul>
+        <a>Chính sách bảo hành</a>
+        <div style="text-align: center;"><h1>QUY ĐỊNH VỀ CHÍNH SÁCH BẢO HÀNH</h1></div>
+        <h2>ĐỊA ĐIỂM BẢO HÀNH</h2>
+           <h3> 1. NHẬN BẢO HÀNH</h3>
+            <p>Tất cả hàng hóa Tin Học Ngôi Sao bán ra đều được bảo hành tại hệ thống cửa hàng cửa hàng .Trung tâm bảo hành chính :  Lầu 1 - Số 28-30 Trần Triệu Luật, P.6, Q.Tân Bình, TP.HCM .</p>
+            
+            <li>Hotline nhận hàng : 0919 267 015</li>
+            <ul>
+                <li>Quy trình: Nhân viên giao dịch bảo hành nhận, ra biên nhận ngay, và sẽ gửi tin nhắn mời khách hàng mang biên nhận đến nhận hàng tại cửa hàng quý khách đến bảo hành .</li>
+            </ul>
+            <li>Hotline nhận hàng (khách gửi bảo hành qua xe/chuyển phát): 0903 955 507 - Trung tâm Bảo hành Tin Học Ngôi Sao.</li>
+            <ul>
+                <li> Quy trình: Tin Học Ngôi Sao nhận hàng bảo hành , khi xong sẽ đóng gói và vận chuyển tận nhà quý khách hàng.</li>
+            </ul>
+            <li>Tiếp nhận phản ánh:</li>
+            <ul>
+            <li>Email: phananhbaohanh@tinhocngoisao.com</li>
+            <li>Hotline: 0931 889 888 - chăm sóc khách hàng</li>
+            </ul>
+            <li>Giờ làm việc: Từ Thứ 2 đến Thứ 7 (giờ hành chính)</li>
+            <ul>
+            <li>Sáng: 08h30 - 12h00</li>
+            <li>Chiều: 13h00 - 17h30</li>
+            <li>Nghỉ trưa: 12h00 - 13h00 (60 phút)</li>
+            </ul>
+            <h2>II. ĐIỀU KIỆN BẢO HÀNH</h2>
+            
+           <li> 2.1 Sản phẩm còn trong thời hạn bảo hành, có tem bảo hành ( hoặc Serial) của nhà phân phối và tem Ngôi Sao, với hư hỏng xác định do lỗi kỹ thuật hoặc ỗi của nhà sản xuất.</li>
+            
+            <li>2.2 Tem bảo hành và mã vạch phải nguyên vẹn, không rách rời, vỡ nát, biến dạng, không bị tẩy xóa.</li>
+            
+            <li>2.3 Sản phẩm còn nguyên vẹn, không cong, vênh, rạn nứt, trầy xước, sứt mẻ, nứt khe cắm, vỡ.</li>
+            
+            <li>2.4 Sử dụng đúng nguồn điện, không bị mối mọt, côn trùng xâm nhập, không cháy nổ, phồng tụ, không bị oxy hóa do môi trường ẩm ướt.</li>
+            
+            <li>2.5 Không can thiệp vào phần cứng (tự ý tháo dỡ, sửa chữa).</li>
+            
+            <li>2.6 Các điều kiện bảo hành tuân theo tiêu chuẩn bảo hành của nhà sản xuất hoặc nhà phân phối tại Việt Nam.</li>
+            <table>
+                <caption>TIÊU CHUẨN BẢO HÀNH THEO HÃNG</caption>
+                <tr>
+                    <td>DELL</td>
+                    <td>AMD</td>
+                    <td>LG</td>
+                    <td>ASUS</td>
+                    <td>SAMSUNG</td>
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td>WESTERN</td>
+                    <td>LOGITECH</td>
+                    <td>GIGABYTE</td>
+                    <td>ACER</td>
+                </tr>
+                <tr>
+                    <td>TOSHIBA</td>
+                    <td>AOC</td>
+                    <td>TP - LINK</td>
+                    <td>SEAGATE</td>
+                    <td>LENOVO</td>
+                </tr>
+                <tr>
+                    <td>MSI</td>
+                    <td>INTEL</td>
+                    <td>VIEWSONIC</td>
+                    <td>ZOTAC</td>
+                    <td>IMOU</td>
+                </tr>
+            </table>
+            <li>2.7 Quý khách vui lòng kiểm tra serial khi mua hàng để dễ dàng bảo hành. Nếu không có serial trong phần mềm Ngôi Sao, chúng tôi có quyền từ chối bảo hành.</li>
+
+            <li>2.8 Quý khách lưu trữ phiếu mua hàng để tiện đổi trả trong 07 ngày.</li>
+
+           <li> 2.9 Với hàng cũ, vui lòng mang đủ phụ kiện ( cáp , chân...) giống lúc mua để tránh việc phải trừ tiền phụ kiện.</li>
+
+
+            <h2>III. ĐIỀU KIỆN KHÔNG BẢO HÀNH</h2>
+                <li>3.1 Sản phẩm hết thời hạn bảo hành hoặc không do Ngôi Sao bán ra.</li>
+                
+                <li>3.2 Tem bảo hành, mã vạch, chỉ số dung lượng, số serial number bị rách, mờ hoặc có dấu hiệu sửa chữa.</li>
+                
+                <li>3.3 Thiết bị bị va chạm, rơi rớt, bể mẻ, móp méo, biến dạng, trầy xước, rỉ xét, xì hoặc phù tụ.</li>
+                
+                <li>3.4 Thiết bị có dấu hiệu cháy nổ, côn trùng xâm nhập hoặc đặt trong môi trường ẩm ướt.</li>
+                
+                <li>3.5 Hư hỏng do thiên tai, sử dụng nguồn điện không ổn định hoặc vận chuyển không đúng quy cách.</li>
+                
+                <li>3.6 Không bảo hành các lỗi do phần mềm gây ra và các phụ kiện tiêu hao đi kèm. Riêng adapter của các thiết bị Modem, Access Point, LCD... vẫn bảo hành 1 tháng.</li>
+                
+                <li>3.7 Ngôi Sao không chịu trách nhiệm về dữ liệu trong ổ cứng, SSD hư.</li>
+
+            <h2>IV. THỜI GIAN GIỮ BẢO HÀNH</h2>
+                 <ul>
+                <li> Đối với hàng thuộc diện bảo hành 1 đổi 1 của Ngôi Sao:</li>
+                <ul>
+                <li>Khách hàng tại TP. HCM: Trong vòng 02 giờ làm việc, trừ trường hợp hết hàng.</li>
+                <li>Khách hàng tỉnh: Trong vòng 07 ngày làm việc (không tính Chủ nhật), tính từ lúc nhận hàng tại công ty.</li>
+                </ul>
+                <li>4.2 Đối với bảo hành chính hãng:</li>
+                <ul>
+                <li>Thời gian bảo hành phổ biến : Trong vòng 14 ngày làm việc (không tính thứ 7 và Chủ nhật) tính từ lúc nhận hàng. Nếu quá thời hạn trên, chúng tôi sẽ thông báo lý do đến khách hàng.</li>
+                <li>Thời gian tối đa cho bảo hành linh kiện : 30 ngày.</li>
+                <li>Trong một số trường hợp không đủ điều kiện bảo hành, Ngôi Sao vẫn có thể nhận bảo hành nhưng thời gian trả hàng phụ thuộc vào hãng (thường từ 2-6 tháng do đi nước ngoài).</li>
+                </ul>
+                <li>4.4 Trường hợp hàng bảo hành không còn do đã ngưng sản xuất hoặc không còn kinh doanh:</li>
+                <li>Khách hàng có thể lựa chọn một trong các cách sau:</li>
+                <ul>
+                
+                <li> Đổi một sản phẩm tương đương: (nếu có) và không nhất thiết phải là hàng mới 100%.</li>
+                
+                <li>4.4.2. Đổi một sản phẩm cấp cao hơn: nếu khách hàng đồng ý với mức giá thương lượng đổi bù. Thời hạn bảo hành sẽ được tính tiếp theo thời hạn bảo hành của sản phẩm cũ.</li>
+                
+                <li>4.4.3. Thương lượng hoàn tiền: với mức khấu trừ cụ thể như sau:</li>
+                
+                <li>Hàng mới:</li>
+                <ul>
+                
+                <li>Sản phẩm bảo hành 36 tháng: Khấu trừ 05%/tháng (tính từ tháng thứ 1).</li>
+                <li>Sản phẩm bảo hành 24 tháng: Khấu trừ 10%/tháng (tính từ tháng thứ 1).</li>
+                <li>Sản phẩm bảo hành 12 tháng: Khấu trừ 10%/tháng (tính từ tháng thứ 1).</li>
+                </ul>
+                <li>Hàng cũ: Tính thời gian bảo hành theo tem NS:</li>
+                <ul>
+                <li>Sản phẩm bảo hành 06 tháng: Khấu trừ 10%/tháng (tính từ tháng thứ 1).</li>
+                <li>Sản phẩm bảo hành 03 tháng: Khấu trừ 15%/tháng thứ 1 và 10% từ tháng thứ 2 trở đi.</li>
+                <li>Tối đa khấu trừ: 70% giá trị sản phẩm. Giá trị khấu trừ được tính theo giá thị trường tại thời điểm khấu trừ. Nếu hàng hóa không còn, sẽ căn cứ vào giá của sản phẩm có hiệu năng tương tự.</li>
+                </ul>
+                </ul>
+                <li>Quý khách lưu ý:</li>
+                <ul>
+                <li>Xin vui lòng giữ biên nhận bảo hành cẩn thận để mang theo khi nhận hàng. Nếu mất biên nhận, quý khách vui lòng cung cấp giấy tờ tùy thân ( hoặc VNeID ) hoặc giấy giới thiệu (nếu là công ty) và số điện thoại đúng như trên biên nhận.</li>
+                <li>Không giải quyết các trường hợp ngoại lệ. Nếu quá 45 ngày, Ngôi Sao xin phép từ chối xử lý.</li>
+                </ul>
+            <h2>V. CÁC CHẾ ĐỘ BẢO HÀNH ĐẶC BIỆT</h2>
+                <li>5.1 Chế độ bảo hành 1 đổi 1:</li>
+                <ul>
+                <li>Tất cả sản phẩm bán ra có chế độ bảo hành 1 đổi 1 đều được công bố trên website tinhocngoisao.com . Xem thêm bảo hành siêu tốc 1h tại đây.</li>
+                </ul>
+                <li>5.2 Bảo hành cho sản phẩm cũ</li>
+                <ul>
+                <li>Tất cả sản phẩm cũ do Ngôi Sao bán ra đều có chế độ bảo hành 1 đổi 1 trong vòng 01 tháng đầu.</li>
+                </ul>
+                <h2>VI. NHẬN HÀNG BẢO HÀNH Khu vực tỉnh ( khác Thành phố Hồ Chí Minh )</h2>
+                    <li>Quý khách vui lòng chuyển phát hàng hóa đến tận Tin Học Ngôi Sao.</li>
+                    
+                    <li>Đóng gói hàng hóa:</li>
+                        <ul>
+                    <li>Quý khách hãy đóng gói cẩn thận để tránh hư hỏng, va đập, nhằm tránh bị từ chối nhận lại. Đặc biệt, với các mặt hàng điện tử dễ vỡ, xin không gửi qua dịch vụ chuyển phát Viettel (do Ngôi Sao đã gặp phải tình trạng vỡ màn hình với tỷ lệ trên 40% khi gửi qua dịch vụ này ra miền Bắc).</li>
+                    </ul>
+                   <li> Thông tin người nhận:</li>
+                   <ul>
+                    <li>Phòng Bảo Hành/ Đổi trả  Tin Học Ngôi Sao</li>
+                    <li>Địa chỉ: 28-30 Trần Triệu Luật, P.6, Q.Tân Bình, TP.HCM</li>
+                    <li>SĐT: 0903 955 507</li>
+                    </ul>
+                    <li>Thông tin người gửi:</li>
+                    <ul>
+                    <li>Xin ghi rõ họ tên, địa chỉ người gửi và số điện thoại liên lạc. Tin Học Ngôi Sao sẽ trả hàng tận nhà, vì vậy thông tin cần chính xác 100%.</li>
+                    <li>Xin ưu tiên chuyển hàng qua bưu điện , hoặc các nhà chuyển phát tận nơi khác.</li>
+                    </ul>
+                    <li>Gọi điện thông báo sau khi gửi hàng
+                        <ul>
+                    <li>Nếu gởi hàng qua chành xe, sau khi gửi hàng, quý khách vui lòng gọi điện đến số 0903 955 507 để thông báo Tin Học Ngôi Sao nhận hàng. Các thông tin cần cung cấp bao gồm:</li>
+                    </ul>
+                    <table>
+                    <tr>
+                        <td>Họ tên người gửi</td>
+                           
+                        <td>Địa chỉ (tương tự như gửi thư vì Tin Học Ngôi Sao sẽ trả lại hàng tận nhà)</td>
+                           
+                        <td>Số bill gửi</td>
+                           
+                        <td>Tên người nhận</td>
+                            
+                        <td>Số ĐT người nhận</td>   
+                          
+                    </tr>
+                    <tr>
+                        <td>-</td>
+
+                        <td>Số ĐT người gửi</td>
+
+                        <td>-</td>
+
+                        <td>Phòng bảo hành Tin Học Ngôi Sao</td>
+
+                        <td> Ngày gửi</td>
+                    </tr>
+                    </table>
+                <li>Thông tin cập nhật:</li>
+                    <ul>
+                    Trong vòng 01 ngày, Ngôi Sao sẽ cập nhật thông tin hàng nhận được hàng ngày để quý khách yên tâm.
+                    </ul>
+                   <li> Kiểm tra sản phẩm:</li>
+                   <ul>
+                    <li>Sau khi nhận hàng, chúng tôi sẽ kiểm tra sản phẩm để xác định có đủ điều kiện bảo hành hay không, và sẽ thông báo cụ thể đến khách hàng.</li>
+                   </ul>
+                    <li>Thời gian xử lý:</li>
+                    <ul>
+                    <li>Thời gian mở kiện hàng và lập biên nhận: tối đa không quá 02 ngày làm việc kể từ lúc nhận hàng. Thời gian Ngôi Sao nhận hàng : tối đa 01 ngày làm việc kể từ khi hàng đến HCM.</li>
+                    </ul>
+                    <li>Phí gửi trả hàng bảo hành</li>
+                    <ul>
+                    <li>Ngôi Sao đóng gói hàng rất cẩn thận và giao tận nhà với mức phí tiết kiệm (chỉ tương đương với chi phí chành xe) để tránh hư hỏng linh kiện.</li>
+                    </ul>
+                    <li>Phản hồi và khiếu nại:</li>
+                    <ul>
+                    <li>Mọi thắc mắc hoặc khiếu nại về thái độ phục vụ của nhân viên, quý khách vui lòng liên hệ:</li>
+                    <ul>
+                    <li>SDT: 0931 889 888 - CSKH</li>
+                    <li>Email: cskh@tinhocngoisao.com</li>
+                    </ul>
+                    <li>Quý khách có thể gửi phản hồi qua Email để Tin Học Ngôi Sao phục vụ tốt hơn.</li>
+                    <h4>Chân thành cám ơn quý khách đã tin tưởng và ủng hộ Tin Học Ngôi Sao . Rất hân hạnh và sẵn sàng phục vụ quý khách.</h4>
+         </ul>
+        </div>
+         <div>
+            <div class="top-footer">
+                <div class="top-footer-item">
+                  <strong>CHÍNH SÁCH GIAO HÀNG</strong>
+                  <p>Nhận hàng & thanh toán tại nhà</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>ĐỔI TRẢ DỄ DÀNG</strong>
+                  <p>1 đổi 1 trong 7 ngày</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>GIÁ LUÔN TỐT NHẤT</strong>
+                  <p>Giá cả hợp lý, nhiều ưu đãi</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>HỖ TRỢ NHIỆT TÌNH</strong>
+                  <p>Tư vấn, giải đáp mọi thắc mắc</p>
+                </div>
+              </div>
+          
+              <div class="mid-footer">
+                <div class="mid-footer-column">
+                  <h3>GIỚI THIỆU THNS</h3>
+                  <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Tư vấn mua hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                  <div class="app-icon-container">
+                          <img src="hình/download (1).png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 5px;">
+                          <i class="fab fa-facebook-f"></i>
+                        <img src="hình/images.png" alt="Youtube" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-youtube"></i>
+                        <img src="hình/download.jpg" alt="TikTok" style="width: 80px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-tiktok"></i>
+                        <img src="hình/Logo-zalo-png.png" alt="Zalo" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-zalo"></i>
+                          <img src="hình/images (2).jpg" alt="Google" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>CHÍNH SÁCH CHUNG</h3>
+                  <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+                    <li><a href="#">Chính sách trả góp</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi - trả hàng</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>THÔNG TIN KHUYẾN MÃI</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp khuyến mãi</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp Hotline CSKH, phản ánh</a></li>
+                    <li><a href="#">Lắp đặt phòng net</a></li>
+                    <li><a href="#">Thiết bị mining</a></li>
+                    <li><a href="#">Tra cứu bảo hành</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="bottom-footer">
+                <p>CÔNG TY TNHH Tin Học Ngôi Sao Lớn | MST: 0312152569 - 05/02/2013 - Số kế hoạch và đầu tư TP.HCM | Trụ sở chính: 28 - 30 Trần Triệu Luật, P6, Quận Tân Bình, TP.HCM | Hotline: 1900.0243 | Email: hanntt@tinhocngoisao.vn</p>
+                <p>© 2023 Tinhocngoisao.vn. All rights reserved.</p>
+              </div>
+         </div>   
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - CÔNG TY TIN HỌC NGÔI SAO LỚN</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: white; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+        .footer {
+            background-color: whitesmoke; /* Màu nền xám nhạt */
+            padding: 20px 0;
+            color: black;
+            font-size: 14px;
+        }
+
+        .top-footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid red;
+            margin-bottom: 20px;
+        }
+
+        .top-footer-item {
+            text-align: center;
+        }
+
+        .top-footer-item img {
+            width: 30px; /* Kích thước icon */
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .mid-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .mid-footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .mid-footer-column h3 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .mid-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mid-footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .mid-footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+  }
+
+  .mid-footer-column.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    text-indent: -9999px; 
+    border-radius: 5px;
+  }
+
+  .bottom-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+  .bottom-footer img {
+    max-width: 150px; /* Kích thước logo chứng nhận */
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+    </style>
+    <style>
+        .app-icon-container {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+      
+        .app-icon-link {
+            width: 50px; /* Kích thước biểu tượng */
+            height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          color: white; /* Màu icon */
+          font-size: 24px; /* Kích thước icon */
+          text-decoration: none;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      
+        .facebook {
+          background-color: #1877F2;
+          font-size: 12px; /* Điều chỉnh cho chữ Facebook */
+          font-weight: bold;
+        }
+      
+        .youtube {
+          background-color: #FF0000;
+            font-size: 16px; /* Điều chỉnh cho chữ Youtube */
+            font-weight: bold;
+        }
+      
+        .tiktok {
+          background-color: #000000;
+            font-size: 16px; /* Điều chỉnh cho chữ TikTok */
+            font-weight: bold;
+        }
+      
+        .zalo {
+          background-color: #0084FF;
+          font-size: 16px; /* Điều chỉnh cho chữ Zalo */
+          font-weight: bold;
+        }
+      
+        .google-plus {
+          background-color: #DB4437;
+            font-size: 16px; /* Điều chỉnh cho chữ Google+ */
+            font-weight: bold;
+        }
+      </style>
+    <style>
+         .body-img {
+            size: 100%;
+            width: 10%;
+            height: 10%;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+        }
+            .inner {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    </style>
+    <style>
+        .danh-muc {
+            font-size: 8px; 
+            width: 130px; /* Chiều rộng của khung danh mục */
+            height: 50px; /* Chiều cao tự động */
+            border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt */
+            padding: 10; /* Tạo khoảng cách bên trong khung */
+            margin-bottom: 10px; /* Tạo khoảng cách bên dưới khung */
+        }
+
+        .danh-muc ul {
+            list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+            padding: 0;
+            margin: 0;
+        }
+
+        .danh-muc li {
+            padding: 5px 0; /* Tạo khoảng cách trên và dưới mỗi mục */
+            border-bottom: 1px dotted #eee; /* Tạo đường chấm mờ phân cách các mục */
+        }
+
+        .danh-muc li:last-child {
+            border-bottom: none; /* Loại bỏ đường kẻ dưới ở mục cuối cùng */
+        }
+    </style>
+    <style>
+        /* CSS cơ bản - bạn cần viết CSS chi tiết hơn để giống giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: #dc3545; /* Màu đỏ tương tự header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-box button {
+            background-color: #dc3545; /* Màu đỏ nút tìm kiếm */
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        .user-actions a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .user-actions span {
+            margin-left: 5px;
+        }
+        .menu-icon {
+            font-size: 20px;
+            text-decoration: black;
+            color: white;
+            margin-right: 15px;
+        }
+        .main-nav {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .main-nav li {
+            margin-right: 20px;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .breadcrumb {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .breadcrumb a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            margin: 0 5px;
+        }
+           
+        .about-section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .about-section h3 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Khuyến mãi</a>
+        <a href="#">Trả góp</a>
+        <a href="#">Bảng giá</a>
+        <a href="#">Xây dựng cấu hình</a>
+        <a href="#">Chính sách bảo hành</a>
+        <a href="#">Hotline</a>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div style="margin-right: 20px;">
+            <img src="hình/download.png" alt="STAR" style="height: 30px;">
+        </div>
+        <button style="padding: 10px 15px; border: 1px solid #ccc; background-color: white; cursor: pointer; margin-right: 10px;">
+            <a" alt="Menu" style="height: 15px; vertical-align: middle; margin-right: 5px;"></a>
+            Danh mục sản phẩm
+        </button>
+        <input type="text" placeholder="Bạn tìm gì..." style="width: 200px;height: 10px; padding: 8px; border: 1px solid #ccc; margin-right: 10px;">
+        <button style="background-color: #dc3545; color: white; border: none; padding: 8px; cursor: pointer;">
+        Tìm kiếm
+    </button>
+    <div style="display: flex; align-items: center;">
+    <img src="hình/images (1).jpg"alt=" Đăng ký/đăng nhập "style="height: 50px; margin-right: 5px;">
+    Tài khoản 
+      
+    </div>
+        <a href="#" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <img src="hình/download (2).png" alt="Giỏ hàng" style="width: 50px;height: 50px; margin-right: 5px;">
+            <span style="background-color: #dc3545; color: white; border-radius: 50%; padding: 2px 5px; font-size: 12px; margin-left: 5px;">0</span>
+        </a>
+    </div>
+    <div class="main-nav">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></l>
+            <li><a href="#">Laptop gaming</a></li>
+            <li><a href="#">Bàn phím Akko</a></li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">CPU AMD</a></li>
+            <li><a href="#">Bàn phím</a></li>
+            <li><a href="#">Màn hình</a></li>
+            </ul>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="#">Trang chủ</a> <span>></span> <span>Giới thiệu</span>
+    </div>
+
+    <div class="about-section">
+        <ul>
+        <h2>GIỚI THIỆU</h2>
+        <h3>CÔNG TY TIN HỌC NGÔI SAO LỚN</h3>
+        <p>Công ty TNHH Tin Học Ngôi Sao Lớn được thành lập vào năm 2013. Là Công ty chuyên kinh doanh, phân phối Sỉ & Lẻ các sản phẩm và hàng linh kiện Máy tính, Laptop, Gaming gear như chuột, bàn phím, tai nghe gaming, tai nghe audio, thiết bị âm thanh, Camera, dịch vụ công nghệ thông tin, cung cấp dịch vụ tư vấn giải pháp phòng Net tối ưu chi phí và các dịch vụ khác liên quan đến máy tính trên toàn quốc. Đặc biệt chúng tôi là đối tác hàng đầu của các hãng nổi tiếng toàn cầu như Nvidia, Intel, AMD, Asus, Gigabyte, MSI, Kingston,...</p>
+            <img src="hình/unnamed.jpg" width="100%" height="100%">  
+            <h2>Giới thiệu về công ty Tin Học Ngôi Sao Lớn (Tin Học Ngôi Sao)</h2>
+            <h3>Lịch sử hình thành và phát triển</h3>
+            <p> Tin Học Ngôi Sao được thành lập vào năm 2013 với sứ mệnh đem đến những sản phẩm, dịch vụ công nghệ thông tin chất lượng cao, đáp ứng nhu cầu ngày càng đa dạng của khách hàng trên toàn quốc. Từ những bước đầu với việc kinh doanh, phân phối các sản phẩm máy tính, linh kiện và phụ kiện công nghệ, công ty đã không ngừng phát triển, mở rộng quy mô hoạt động và đa dạng hóa sản phẩm, dịch vụ.</p>
+            <img src="hình/unnamed (1).jpg" width="100%" height="100%">
+        <p>Bằng sự nỗ lực không ngừng, đội ngũ nhân sự chuyên nghiệp và tận tâm, Tin Học Ngôi Sao đã nhanh chóng khẳng định vị thế của mình trên thị trường và trở thành một trong những doanh nghiệp hàng đầu trong ngành công nghệ thông tin Việt Nam. Với mạng lưới showroom và trung tâm bảo hành rộng khắp, cùng với sự đa dạng và chất lượng của sản phẩm, dịch vụ, Tin Học Ngôi Sao đã, đang và sẽ trở thành lựa chọn hàng đầu của đông đảo khách hàng.</p>
+            <h2>Sản phẩm và dịch vụ</h2>
+            <h3>Linh kiện mới và đã qua sử dụng</h3>
+            <p>Tin Học Ngôi Sao cung cấp một danh mục sản phẩm đa dạng, bao gồm cả linh kiện mới và đã qua sử dụng. Trong đó, các sản phẩm linh kiện mới bao gồm:</p>
+            <ul>
+                <li>kiện máy tính: Mainboard, CPU, Ram, VGA - Card màn hình, Nguồn, Thùng PC, Laptop, Màn hình LCD, Bàn phím, Chuột, Tai Nghe</li>
+
+                <li>Linh kiện Camera: Camera, Phụ kiện Camera các loại</li>
+                    
+                <li>Linh kiện sửa chữa máy tính và phụ kiện: Cáp mạng, Đầu chuyển, Adapter, Thiết bị Mạng - Wifi, Phụ kiện Laptop & Điện thoại</li>
+            </ul>
+            <p>Bên cạnh đó, Tin Học Ngôi Sao cũng cung cấp các sản phẩm linh kiện máy tính đã qua sử dụng, bao gồm: Màn hình LCD, VGA - Card màn hình, Ram, Nguồn, Mainboard, CPU, Ổ cứng, Laptop và một số phụ kiện khác.</p>
+            <p>Với sự đa dạng và phong phú về chủng loại, Tin Học Ngôi Sao mang đến cho khách hàng nhiều lựa chọn phù hợp với nhu cầu sử dụng và khả năng chi trả. Đồng thời, các sản phẩm tại Tin Học Ngôi Sao đều đảm bảo chất lượng và nguồn gốc rõ ràng, được bảo hành chu đáo.</p>
+                <h2>Tin Học Ngôi Sao - địa chỉ mua sắm thiết bị công nghệ uy tín</h2>
+                <h3>Thông tin các chi nhánh</h3>
+                <p>Hiện nay, Tin Học Ngôi Sao đã có hệ thống showroom và trung tâm bảo hành rộng khắp trên địa bàn Thành phố Hồ Chí Minh, bao gồm:</p>
+                <ul>
+                    <li>Trụ sở chính: 28 - 30 Trần Triệu Luật, P.6, Quận Tân Bình, TP.HCM</li>
+
+                    <li>Chi nhánh 2: 180 Lê Văn Việt, P. Tăng Nhơn Phú B, Thủ Đức, TP.HCM</li>
+
+                    <li>Chi nhánh 3: 474 Điện Biên Phủ, P. 17, Q. Bình Thạnh, TP.HCM</li>
+
+                    <li>Chi nhánh 4: 198 Hoàng Văn Thụ, P.4, Q.Tân Bình, TP.HCM </li>
+
+                    <li>Chi nhánh 5: 138 - 140 Lý Thường Kiệt, Thắng lợi, TP.BMT, Đắk Lắk</li>
+                </ul>
+                <img src="hình/unnamed (2).jpg" width="50%" height="100%" style="margin-left: 25%;">
+                <h2> Tầm nhìn và mục tiêu</h2>
+<h3> Chiến lược phát triển</h3>
+<p>Tin Học Ngôi Sao luôn đặt mục tiêu trở thành một trong những doanh nghiệp máy tính hàng đầu tại Việt Nam vào năm 2030. Để đạt được mục tiêu này, công ty đã xây dựng và triển khai nhiều chiến lược phát triển, bao gồm:</p>
+
+<li>Không ngừng mở rộng mạng lưới showroom và trung tâm bảo hành trên toàn quốc, đem sản phẩm, dịch vụ đến gần hơn với khách hàng.</li>
+
+<li>Đa dạng hóa danh mục sản phẩm, dịch vụ, đáp ứng nhu cầu ngày càng đa dạng của thị trường.</li>
+
+<li>Nâng cao chất lượng sản phẩm, dịch vụ thông qua việc hợp tác với các nhà cung cấp, nhà sản xuất uy tín trên thế giới.</li>
+
+<li>Đầu tư mạnh mẽ vào công nghệ, cải thiện quy trình vận hành, nâng cao trải nghiệm khách hàng.</li>
+
+<li>Xây dựng đội ngũ nhân sự chuyên nghiệp, giàu kinh nghiệm, tận tâm phục vụ khách hàng.</li>
+
+<p>Với những nỗ lực không ngừng này, Tin Học Ngôi Sao tin tưởng sẽ tiếp tục khẳng định vị thế, trở thành lựa chọn số một của khách hàng trong lĩnh vực công nghệ thông tin.</p>
+
+<h2>Cam kết vì khách hàng </h2>
+<p>Tại Tin Học Ngôi Sao, sự hài lòng của khách hàng luôn là ưu tiên hàng đầu. Công ty cam kết mang đến cho khách hàng những trải nghiệm tuyệt vời thông qua:</p>
+
+<li>Bán hàng online toàn quốc, đảm bảo sản phẩm chính hãng 100%.</li>
+
+<li>Chính sách giao hàng COD (Thanh toán khi nhận hàng) linh hoạt, tiện lợi.</li>
+
+<li>Sản phẩm phong phú, đa dạng, đáp ứng mọi nhu cầu của khách hàng.</li>
+
+<li>Giá cả cạnh tranh nhất thị trường, mang lại giá trị tối ưu cho khách hàng.</li> 
+
+<li>Hệ thống showroom chuyên nghiệp, nhân viên tư vấn kỹ thuật tận tình.</li>
+
+<li>Chính sách bảo hành nhanh chóng, hiệu quả.</li>
+
+<p>Bằng những cam kết này, Tin Học Ngôi Sao mong muốn trở thành sự lựa chọn số một của khách hàng trong lĩnh vực công nghệ thông tin.</p>
+
+<p>Với tầm nhìn xa và chiến lược phát triển bền vững, Tin Học Ngôi Sao chắc chắn sẽ tiếp tục phát huy những thế mạnh của mình, không ngừng đổi mới và sáng tạo để phục vụ khách hàng ngày một tốt hơn.</p>
+            </ul>
+        </div>
+         <div>
+            <div class="top-footer">
+                <div class="top-footer-item">
+                  <strong>CHÍNH SÁCH GIAO HÀNG</strong>
+                  <p>Nhận hàng & thanh toán tại nhà</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>ĐỔI TRẢ DỄ DÀNG</strong>
+                  <p>1 đổi 1 trong 7 ngày</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>GIÁ LUÔN TỐT NHẤT</strong>
+                  <p>Giá cả hợp lý, nhiều ưu đãi</p>
+                </div>
+                <div class="top-footer-item">
+                  <strong>HỖ TRỢ NHIỆT TÌNH</strong>
+                  <p>Tư vấn, giải đáp mọi thắc mắc</p>
+                </div>
+              </div>
+          
+              <div class="mid-footer">
+                <div class="mid-footer-column">
+                  <h3>GIỚI THIỆU THNS</h3>
+                  <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Tư vấn mua hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                  <div class="app-icon-container">
+                          <img src="hình/download (1).png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 5px;">
+                          <i class="fab fa-facebook-f"></i>
+                        <img src="hình/images.png" alt="Youtube" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-youtube"></i>
+                        <img src="hình/download.jpg" alt="TikTok" style="width: 80px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-tiktok"></i>
+                        <img src="hình/Logo-zalo-png.png" alt="Zalo" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-zalo"></i>
+                          <img src="hình/images (2).jpg" alt="Google" style="width: 50px; height: 50px; margin-right: 5px;">
+                          <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>CHÍNH SÁCH CHUNG</h3>
+                  <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+                    <li><a href="#">Chính sách trả góp</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi - trả hàng</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>THÔNG TIN KHUYẾN MÃI</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp khuyến mãi</a></li>
+                  </ul>
+                </div>
+                <div class="mid-footer-column">
+                  <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                  <ul>
+                    <li><a href="#">Tổng hợp Hotline CSKH, phản ánh</a></li>
+                    <li><a href="#">Lắp đặt phòng net</a></li>
+                    <li><a href="#">Thiết bị mining</a></li>
+                    <li><a href="#">Tra cứu bảo hành</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="bottom-footer">
+                <p>CÔNG TY TNHH Tin Học Ngôi Sao Lớn | MST: 0312152569 - 05/02/2013 - Số kế hoạch và đầu tư TP.HCM | Trụ sở chính: 28 - 30 Trần Triệu Luật, P6, Quận Tân Bình, TP.HCM | Hotline: 1900.0243 | Email: hanntt@tinhocngoisao.vn</p>
+                <p>© 2023 Tinhocngoisao.vn. All rights reserved.</p>
+              </div>
+         </div>   
+</body>
+</html>
